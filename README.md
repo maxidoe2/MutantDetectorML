@@ -119,11 +119,6 @@ https://mutantdetectorml.onrender.com
 
 ## 📫 Contacto
 
-Si tienes preguntas o sugerencias sobre el proyecto, no dudes en abrir un issue o enviar un pull request.
+Si tienes preguntas o sugerencias sobre el proyecto, no dudes en enviarme un correo a maxidoe2004@gmail.com
 
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
-
----
 ⚡️ Desarrollado con 💙 para Magneto
