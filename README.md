@@ -1,45 +1,31 @@
-# 🚀 Parcial Magneto - Detección de Mutantes
+🧬 MutantDetectorML - Identificador de Mutantes
+🎯 Descripción
+Sistema revolucionario desarrollado para Magneto que permite identificar mutantes mediante el análisis de secuencias de ADN. La plataforma procesa matrices genéticas para detectar patrones específicos que determinan si un individuo posee el gen mutante, basándose en la repetición de secuencias en múltiples direcciones.
+🔬 Especificaciones Técnicas
+La detección se realiza sobre una matriz cuadrada de ADN donde cada elemento representa una base nitrogenada. El sistema procesa únicamente las bases (A,T,C,G), analizando la presencia de secuencias repetitivas que indican la presencia del gen mutante.
+⚡ Características Principales
 
-## 🧬 Introducción
-Magneto está en busca de mutantes para su causa y te ha contratado para desarrollar un sistema que detecte si un humano es mutante basándose en su secuencia de ADN. El sistema debe procesar secuencias de ADN y determinar si existen más de una secuencia de cuatro letras iguales de forma oblicua, horizontal o vertical.
+Análisis multidireccional de ADN (horizontal, vertical y diagonal)
+Detección de secuencias mutantes (4 elementos idénticos)
+Procesamiento de matrices desde 4x4 hasta 15x15
+Sistema de verificación de integridad matricial
+Base de datos para registro histórico de análisis
 
-## ⚙️ Funcionamiento
-Se recibirá como parámetro un array de Strings que representan cada fila de una tabla de (6x6) con la secuencia del ADN. Las letras de los Strings solo pueden ser: (A,T,C,G), las cuales representa cada base nitrogenada del ADN.
+📝 Método Principal
+javaCopyboolean isMutant(String[] dna)
+El método recibe un array de Strings que representa la matriz de ADN a analizar. Cada string debe contener únicamente los caracteres A, T, C, G.
+🛠️ Funcionalidades Core
 
-Se sabrá si un humano es mutante, si se encuentra MAS DE UNA SECUENCIA de cuatro letras iguales, de forma oblicua, horizontal o vertical.
+Análisis bidimensional completo del ADN
+Sistema de detección de ADN duplicado
+Validación de dimensiones matriciales
+Verificación de integridad de datos
+Registro histórico de análisis
 
-Las filas de la matriz a verificar se ingresan por teclado.
-
-Ejemplo de input: 'ATCGTA' (esto equivale a una fila de la matriz)
-
-Una vez cargada correctamente la misma, se aplica una función que verifica si hay presencia en la matriz de mutantes o no y se devuelve el resultado al usuario en base a eso.
-
-## 🚀 Firma del método:
-```java
-boolean isMutant(String[] dna)
-```
-Recibe un array de Strings que representan cada fila de una tabla de NxN con la secuencia del ADN. Las letras válidas son: A, T, C, G, representando las bases nitrogenadas del ADN.
-
-## 🔍 Funcionalidades principales:
-
-•Verificación de secuencias mutantes: Se detectan secuencias en las direcciones horizontal, vertical y diagonal.
-
-•Detección de ADN ya registrado en la base de datos.
-
-•Soporte de matrices desde 4x4 a 15x15.
-
-•Detección de Matrices No Cuadradas.
-
-## 🚀 Ejecución
-El proyecto ha sido deployado a Render y puedes accederlo mediante el siguiente link:
-https://mutantdetectorml.onrender.com
-
-## 🌐 Endpoints
-
-- **POST /mutant** - Recibe un JSON con la matriz de ADN a verificar. Ejemplo:
-
-```json
-{
+🌐 API Endpoints
+Análisis de ADN
+POST /mutant
+jsonCopy{
     "dna": [
         "ATGCGA",
         "CAGTGC",
@@ -49,44 +35,33 @@ https://mutantdetectorml.onrender.com
         "TCACTG"
     ]
 }
-```
-- **GET /stats** - Devuelve un JSON con la cantidad de mutantes y humanos verificados. Ejemplo:
-```json
-{
+Estadísticas de Análisis
+GET /stats
+jsonCopy{
     "count_mutant_dna": 50,
     "count_human_dna": 150,
     "ratio": 0.33
 }
-```
-## 🧬 Ejemplo de ADN
-
-Ejemplo de matriz **MUTANTE**:
-
-```json
-{
+📊 Ejemplos de ADN
+Matriz MUTANTE:
+jsonCopy{
     "dna": [
-      "ATGCGA",
-      "CAGTGC",
-      "TTATGT",
-      "AGAAAG",
-      "CCCCTA",
-      "TCACTG"
+        "ATGCGA",
+        "CAGTGC",
+        "TTATGT",
+        "AGAAAG",
+        "CCCCTA",
+        "TCACTG"
     ]
 }
-```
-## 🧬 Ejemplo de ADN
-
-Ejemplo de matriz **NO MUTANTE**:
-
-```json
-{
+Matriz NO MUTANTE:
+jsonCopy{
     "dna": [
-      "ATGGTG",
-      "GTCTTA",
-      "AATTGG",
-      "ACTAGT",
-      "GGATTC", 
-      "AGGCAA"
+        "ATGGTG",
+        "GTCTTA",
+        "AATTGG",
+        "ACTAGT",
+        "GGATTC",
+        "AGGCAA"
     ]
 }
-```
