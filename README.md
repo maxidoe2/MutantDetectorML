@@ -1,31 +1,55 @@
-🧬 MutantDetectorML - Identificador de Mutantes
-🎯 Descripción
+# 🧬 MutantDetectorML
+
+[![Render Deploy](https://img.shields.io/badge/Render-Deploy-green)](https://mutantdetectorml.onrender.com)
+[![API Status](https://img.shields.io/badge/API-Active-brightgreen)](https://mutantdetectorml.onrender.com/stats)
+[![DNA Analysis](https://img.shields.io/badge/DNA-Analysis-blue)](https://mutantdetectorml.onrender.com/mutant)
+
+## 🎯 Descripción
+
 Sistema revolucionario desarrollado para Magneto que permite identificar mutantes mediante el análisis de secuencias de ADN. La plataforma procesa matrices genéticas para detectar patrones específicos que determinan si un individuo posee el gen mutante, basándose en la repetición de secuencias en múltiples direcciones.
-🔬 Especificaciones Técnicas
+
+## 🔬 Especificaciones Técnicas
+
 La detección se realiza sobre una matriz cuadrada de ADN donde cada elemento representa una base nitrogenada. El sistema procesa únicamente las bases (A,T,C,G), analizando la presencia de secuencias repetitivas que indican la presencia del gen mutante.
-⚡ Características Principales
 
-Análisis multidireccional de ADN (horizontal, vertical y diagonal)
-Detección de secuencias mutantes (4 elementos idénticos)
-Procesamiento de matrices desde 4x4 hasta 15x15
-Sistema de verificación de integridad matricial
-Base de datos para registro histórico de análisis
+## ⚡ Características Principales
 
-📝 Método Principal
-javaCopyboolean isMutant(String[] dna)
+- Análisis multidireccional de ADN (horizontal, vertical y diagonal)
+- Detección de secuencias mutantes (4 elementos idénticos)
+- Procesamiento de matrices desde 4x4 hasta 15x15
+- Sistema de verificación de integridad matricial
+- Base de datos para registro histórico de análisis
+
+## 📝 Método Principal
+
+```java
+boolean isMutant(String[] dna)
+```
+
 El método recibe un array de Strings que representa la matriz de ADN a analizar. Cada string debe contener únicamente los caracteres A, T, C, G.
-🛠️ Funcionalidades Core
 
-Análisis bidimensional completo del ADN
-Sistema de detección de ADN duplicado
-Validación de dimensiones matriciales
-Verificación de integridad de datos
-Registro histórico de análisis
+## 🛠️ Funcionalidades Core
 
-🌐 API Endpoints
-Análisis de ADN
+| Funcionalidad | Descripción |
+|---------------|-------------|
+| Análisis ADN | Verificación bidimensional completa |
+| Detección | Sistema de identificación de ADN duplicado |
+| Validación | Control de dimensiones matriciales |
+| Integridad | Verificación de datos entrantes |
+| Registro | Historial completo de análisis |
+
+## 🌐 API Endpoints
+
+### 🧪 Análisis de ADN
+
+```http
 POST /mutant
-jsonCopy{
+```
+
+#### Request Body
+
+```json
+{
     "dna": [
         "ATGCGA",
         "CAGTGC",
@@ -35,16 +59,30 @@ jsonCopy{
         "TCACTG"
     ]
 }
-Estadísticas de Análisis
+```
+
+### 📊 Estadísticas
+
+```http
 GET /stats
-jsonCopy{
+```
+
+#### Response
+
+```json
+{
     "count_mutant_dna": 50,
     "count_human_dna": 150,
     "ratio": 0.33
 }
-📊 Ejemplos de ADN
-Matriz MUTANTE:
-jsonCopy{
+```
+
+## 📊 Ejemplos de ADN
+
+### ✨ Matriz MUTANTE
+
+```json
+{
     "dna": [
         "ATGCGA",
         "CAGTGC",
@@ -54,8 +92,12 @@ jsonCopy{
         "TCACTG"
     ]
 }
-Matriz NO MUTANTE:
-jsonCopy{
+```
+
+### 👤 Matriz NO MUTANTE
+
+```json
+{
     "dna": [
         "ATGGTG",
         "GTCTTA",
@@ -65,3 +107,23 @@ jsonCopy{
         "AGGCAA"
     ]
 }
+```
+
+## 🚀 Despliegue
+
+El proyecto está desplegado en Render y puede accederse a través de:
+
+```
+https://mutantdetectorml.onrender.com
+```
+
+## 📫 Contacto
+
+Si tienes preguntas o sugerencias sobre el proyecto, no dudes en abrir un issue o enviar un pull request.
+
+## 📝 Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
+
+---
+⚡️ Desarrollado con 💙 para Magneto
