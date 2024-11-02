@@ -129,6 +129,9 @@ https://mutantdetectorml.onrender.com
 ## 10000 HILOS POST /MUTANT (5 SEGUNDOS SUBIDA)
 ![POST METHOD](https://i.imgur.com/V2SgGQG.png)
 
+## 😎​ Magneto está feliz.
+![POST METHOD](https://i.imgur.com/phpBzyW.jpeg)
+
 ## 📫 Contacto
 
 Si tienes preguntas o sugerencias sobre el proyecto, no dudes en enviarme un correo a maxidoe2004@gmail.com
