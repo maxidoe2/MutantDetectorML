@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0625c976-498f-4524-ba6b-9a5fa26747f2)# 🧬 MutantDetectorML
+🧬 MutantDetectorML
 
 [![Render Deploy](https://img.shields.io/badge/Render-Deploy-green)](https://mutantdetectorml.onrender.com)
 [![API Status](https://img.shields.io/badge/API-Active-brightgreen)](https://mutantdetectorml.onrender.com/stats)
