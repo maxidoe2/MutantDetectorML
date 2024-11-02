@@ -117,6 +117,18 @@ El proyecto está desplegado en Render y puede accederse a través de:
 https://mutantdetectorml.onrender.com
 ```
 
+## 🚀 Diagrama de Secuencia del proyecto
+## POST MUTANT METHOD
+![POST METHOD](https://i.imgur.com/1jajez5.jpeg)
+## GET STATS METHOD
+![GET METHOD](https://i.imgur.com/OwVDR0t.jpeg)
+
+## 🚀 Resultados en JMeter
+## 1000 HILOS POST /MUTANT (1 SEGUNDO SUBIDA)
+![POST METHOD](https://i.imgur.com/Qe6kmu8.png)
+## 10000 HILOS POST /MUTANT (5 SEGUNDOS SUBIDA)
+![POST METHOD](https://imgur.com/a/lOrFkct)
+
 ## 📫 Contacto
 
 Si tienes preguntas o sugerencias sobre el proyecto, no dudes en enviarme un correo a maxidoe2004@gmail.com
