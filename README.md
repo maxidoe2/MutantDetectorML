@@ -1,4 +1,4 @@
-# 🧬 MutantDetectorML
+![image](https://github.com/user-attachments/assets/0625c976-498f-4524-ba6b-9a5fa26747f2)# 🧬 MutantDetectorML
 
 [![Render Deploy](https://img.shields.io/badge/Render-Deploy-green)](https://mutantdetectorml.onrender.com)
 [![API Status](https://img.shields.io/badge/API-Active-brightgreen)](https://mutantdetectorml.onrender.com/stats)
@@ -119,18 +119,18 @@ https://mutantdetectorml.onrender.com
 
 ## 💀​ Diagrama de Secuencia del proyecto
 ## POST MUTANT METHOD
-![POST METHOD](https://i.imgur.com/1jajez5.jpeg)
+![POST METHOD](https://i.imgur.com/UIfUUum.jpeg)
 ## GET STATS METHOD
-![GET METHOD](https://i.imgur.com/OwVDR0t.jpeg)
+![GET METHOD](https://i.imgur.com/8Ea5fp5.jpeg)
 
 ## 👀​ Resultados en JMeter
 ## 1000 HILOS POST /MUTANT (1 SEGUNDO SUBIDA)
-![POST METHOD](https://i.imgur.com/Qe6kmu8.png)
+![POST METHOD](https://i.imgur.com/kFrD1Eb.png)
 ## 10000 HILOS POST /MUTANT (5 SEGUNDOS SUBIDA)
-![POST METHOD](https://i.imgur.com/V2SgGQG.png)
+![POST METHOD](https://i.imgur.com/iLTr6TY.png)
 
 ## 😎​ Magneto está feliz.
-![POST METHOD](https://i.imgur.com/phpBzyW.jpeg)
+![POST METHOD](https://i.imgur.com/xUjRxa1.jpeg)
 
 ## 📫 Contacto
 
