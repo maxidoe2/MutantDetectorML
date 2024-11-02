@@ -127,7 +127,7 @@ https://mutantdetectorml.onrender.com
 ## 1000 HILOS POST /MUTANT (1 SEGUNDO SUBIDA)
 ![POST METHOD](https://i.imgur.com/Qe6kmu8.png)
 ## 10000 HILOS POST /MUTANT (5 SEGUNDOS SUBIDA)
-![POST METHOD](https://imgur.com/a/lOrFkct)
+![POST METHOD](https://i.imgur.com/V2SgGQG.png)
 
 ## 📫 Contacto
 
